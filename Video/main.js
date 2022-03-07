@@ -12,11 +12,11 @@ slider.onchange = getSliderTime
 
 
 function getTime() {
-    slider.getAttribute("max",video.duration)
+    slider.getAttribute('max',video.duration)
     let tempo = (video.currentTime);
     slider.value = tempo;
     spanVideo.innerHTML = tempo;
-    
+
 }
 function getSliderTime() {
     video.currentTime = slider.value
