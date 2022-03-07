@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Assets/style.css">
+    <title>Document</title>
+
+</head>
+<body>
+    <div> 
+     
+    </div>
+    <div id="container">
+        <input type="text" id="videosrc">
+        <input type="submit" onclick="videoSet()">
+       <video disablePictureInPicture class="video" src="/Assets/waves.mp4" id="video"></video>
+       <input id="sound" onchange="getSliderTime(this)" value="0" class="sound-slider" step="0.01" type="range">
+       <div id="controls">
+           
+           <img class="buttons" onclick="rewind()" src="/Assets/rewind.png" alt="rewind">
+           <img class="buttons" onclick="pause()" src="/Assets/pause.png" alt="pause">
+           <img class="buttons" onclick="play()" src="/Assets/play.png" alt="play">
+           <img class="buttons" onclick="skip()" src="/Assets/skip.png" alt="skip">
+           <img class="buttons" onclick="speedDown()"src="/Assets/minus.png" alt="">
+           <img class="buttons" onclick="speedUp()"src="/Assets/plus.png" alt="">
+           <span class="sp"id="speed"></span>
+           <img class="buttons" id="sound-logo" onclick="sound()"src="/Assets/sound.png" alt="sound">
+    </div>
+
+    <script src="/Video/main.js"></script>
+</body>
+</html>
