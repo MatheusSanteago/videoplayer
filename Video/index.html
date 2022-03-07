@@ -13,10 +13,10 @@
      
     </div>
     <div id="container">
-        <input type="text" id="videosrc">
+        <input type="text" id="videosrc"><br>
         <input type="submit" onclick="videoSet()">
        <video disablePictureInPicture class="video" src="/Assets/waves.mp4" id="video"></video>
-       <input id="sound" onchange="getSliderTime(this)" value="0" class="sound-slider" step="0.02" type="range">
+       <input id="progress" onchange="getSliderTime(this)" class="slider" value ='0' step="0.02" type="range">
        <div id="controls">
            
            <img class="buttons" onclick="rewind()" src="/Assets/rewind.png" alt="rewind">
@@ -28,7 +28,6 @@
            <span class="sp"id="speed"></span>
            <img class="buttons" id="sound-logo" onclick="sound()"src="/Assets/sound.png" alt="sound">
     </div>
-
     <script src="/Video/main.js"></script>
 </body>
 </html>

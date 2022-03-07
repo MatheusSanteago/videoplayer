@@ -3,20 +3,17 @@ var video = document.getElementById('video');
 let spanVideo = document.getElementById('speed');
 let divControls = document.getElementById('controls');
 let container = document.getElementById('container');
-let slider = document.getElementById('sound');
+let slider = document.getElementById('progress');
 
-
-
-video.ontimeupdate = getTime;   
-slider.onchange = getSliderTime
+video.ontimeupdate = getTime;    
+slider.onchange = getSliderTime;
 
 
 function getTime() {
-    slider.getAttribute('max',video.duration)
     let tempo = (video.currentTime);
     slider.value = tempo;
-    spanVideo.innerHTML = tempo;
-
+    spanVideo.innerHTML = Math.ceil(tempo);
+    console.log(slider);
 }
 function getSliderTime() {
     video.currentTime = slider.value
