@@ -17,17 +17,16 @@
         <input type="submit" onclick="videoSet()">
        <video disablePictureInPicture class="video" src="/Assets/waves.mp4" id="video"></video>
        <input id="progress" onchange="getSliderTime(this)" class="slider" value ='0' step="0.02" type="range">
-       <div id="controls">
-           
+       <div id="controls">    
            <img class="buttons" onclick="rewind()" src="/Assets/rewind.png" alt="rewind">
            <img class="buttons" onclick="pause()" src="/Assets/pause.png" alt="pause">
            <img class="buttons" onclick="play()" src="/Assets/play.png" alt="play">
            <img class="buttons" onclick="skip()" src="/Assets/skip.png" alt="skip">
-           <img class="buttons" onclick="speedDown()"src="/Assets/minus.png" alt="">
-           <img class="buttons" onclick="speedUp()"src="/Assets/plus.png" alt="">
+           <img class="buttons" onclick="" src="http://cdn.onlinewebfonts.com/svg/img_161329.png" alt="config">
            <span class="sp"id="speed"></span>
-           <img class="buttons" id="sound-logo" onclick="sound()"src="/Assets/sound.png" alt="sound">
-    </div>
+           <img class="buttons" id="sound-logo" src="/Assets/sound.png" alt="sound">
+           
+        </div>
     <script src="/Video/main.js"></script>
 </body>
 </html>

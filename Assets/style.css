@@ -6,6 +6,10 @@ body {
   background-repeat: no-repeat;
   height: 1000px;
 }
+*{
+  font-size: 18px;
+  font-weight: bold;
+}
 #container {
   position: relative;
   margin-top: 130px;
@@ -28,7 +32,7 @@ body {
   top: 500px;
   width: 100%;
   height: 10%;
-  background-image: linear-gradient(to right,#249011,#4ddb56,#169000);
+  background-image: linear-gradient(to right, #ff01ff,#2d0877);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   box-shadow: 0px 0px 100px 20px;
@@ -36,7 +40,7 @@ body {
 .buttons {
   position: relative;
   top: 100%;
-  left: 99px;
+  left: 20px;
   width: 30px;
   padding: 10px;
   margin-right: 10px;
@@ -56,7 +60,7 @@ body {
 }
 #sound-logo {
   position: relative;
-  left: 120px;
+  left: 20px;
 }
 #speed,
 .sp {
@@ -64,7 +68,7 @@ body {
   color: white;
   position: relative;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  left: 90px;
+  left: 20px;
   top: 2.3px;
   background-color: #00000094;
   padding: 3px;
@@ -77,27 +81,41 @@ input {
   bottom: 50px;
   width: 300px;
   height: 40px;
+  border: white solid 2px;
   border-radius: 20px;
+  border-bottom-left-radius: 0px;
+  outline: none;
 }
 input[type="range"] {
+  border: white solid;
   margin-top: 10px;
   margin-left: 10px;
   -webkit-appearance: none;
-  background-color: #eeeeee;
   height: 20px;
   border-radius: 11px;
 }
-input[type="submit"] {
+input[type="submit"]{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-image: linear-gradient(to right, purple,mediumpurple);
+  border: white solid;
   margin-top: 6px;
   margin-left: 2px;
+  width: 100px;
   border-radius: 20px;
+  border-top-left-radius: 0px;
+  color: white;
+}
+
+input[type="submit"]:hover{
+  cursor: pointer;
+  background-image: linear-gradient(to right, #ff01ff,#2d0877);
 }
 .slider {
   -webkit-appearance: none;
   width: 100%;
   height: 15px;
   border-radius: 5px;
-  background-image: linear-gradient(to right,#249011,#4ddb56,#169000);
+  background-image: linear-gradient(to right, #ff01ff,#2d0877);
   outline: none;
   opacity: 0.7;
   -webkit-transition: 0.2s;
@@ -110,7 +128,7 @@ input[type="submit"] {
   width: 25px;
   height: 10px;
   border-radius: 10px 10px 10px 10px;
-  background: #000000;
+  background: #ffffff;
   cursor: pointer;
 }
 
@@ -120,4 +138,18 @@ input[type="submit"] {
   border-radius: 50%;
   background: #fa0000;
   cursor: pointer;
+}
+#volume{
+    border: #ffffff solid 3px;
+    position: absolute;
+    top: 0px;
+    width: 150px;
+}
+#soundbar{
+    position: relative;
+    left: 20px;
+    bottom: -4px;
+    background-color: none;
+    width: 160px;
+    height: 40px;
 }
