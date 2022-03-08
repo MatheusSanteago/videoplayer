@@ -6,7 +6,7 @@ let slider = document.getElementById("progress");
 
 
 video.ontimeupdate = getTime;
-slider.onchange = getSliderTime;
+slider.ontimeupdate = getSliderTime;
 
 container.addEventListener("mouseout", hideControls);
 container.addEventListener("mouseover", showControls);
@@ -14,6 +14,7 @@ container.addEventListener("mouseover", showControls);
 
 function getTime() {
     let tempo = video.currentTime;
+    slider.max = video.duration;
     slider.value = tempo;
     spanVideo.innerHTML = Math.ceil(tempo) + 's';
 }
